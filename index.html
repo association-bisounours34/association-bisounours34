@@ -123,17 +123,6 @@
 		<p class="droits">Tout droits réservés - WADM - 2020</p>
 		<a class="droits" href="https://association-bisounours34.github.io/mentions.html" target="_blank">Mentions Légales</a>	
 	</div>
-	<script>
-	var logo = document.querySelector('.logo-sticky')
-	var logoPosition = logo.getBoundingClientRect().top;
-	window.addEventListener('scroll', function () {
-		if (window.pageYOffset > logoPosition) {
-			logo.style.visibility = "visible";
-		} else {
-			logo.style.visibility = "hidden";
-		}
-	});
-	</script>
 	<script type="text/javascript">
 function decode(a) {
   return a.replace(/[a-zA-Z]/g, function(c){
@@ -148,6 +137,18 @@ element.setAttribute("onclick", "");
 element.firstChild.nodeValue = "Ouvrir programme email";
 };
 </script>
+	<script>
+	var logo = document.querySelector('.logo-sticky')
+	var logoPosition = logo.getBoundingClientRect().top;
+	window.addEventListener('scroll', function () {
+		if (window.pageYOffset > logoPosition) {
+			logo.style.visibility = "visible";
+		} else {
+			logo.style.visibility = "hidden";
+		}
+	});
+	</script>
+
 </body>
 </html>
 
