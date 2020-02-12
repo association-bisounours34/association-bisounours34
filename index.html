@@ -70,7 +70,7 @@
 				   	<p>09/02/2020<br>09h-13h</p>
 				</td>
 				 <td class="border">
-				   	<p>Emplacements 10€, tables 1€, <br>à réserver auprès de <a class="julie" href="">la présidente</a><br><br><span class="color">Salle A. Roux</span></p>
+				   	<p>Emplacements 10€, tables 1€, <br>à réserver auprès de <a class="julie" href="mailto:juli48@live.fr">la présidente</a><br><br><span class="color">Salle A. Roux</span></p>
 				</td>
 				<td class="border">
 				   	<p>Confection alimentaire, <br>Tenue du stand buvette</p>
@@ -116,13 +116,27 @@
 		<div class="parrallax-item contact">
 			<h2><span class="font">Présidente de l'association</span> <br><span class="regular">Mme Vaillant Julie</span><br><a class="mail" href="mailto:crechelesbisounours.assos@gmail.com?subject=Mail envoyé via le site web">Contactez la présidente par mail</a></h2>
 			<h2 class="padright regular">70 rue des Thermes <br>34400 Lunel-Viel <br><a class="tel" href="tel:+33467837280">04 67 83 72 80</a></h2>
-			<h2><span class="font">Directrice de la structure</span> <br><span class="regular">Mme Rolland Anne</span><br><a class="mail" id="email" href="mailto:bisounours&period;creche&commat;orange&period;fr">Contactez la directrice par mail</a></h2>
+			<h2><span class="font">Directrice de la structure</span> <br><span class="regular">Mme Rolland Anne</span><br><a class="mail" id="email" href=" " onclick='openMailer(this);'>Contactez la directrice par mail</a></h2>
 		</div>
 	</div>
 	<div class="parrallax-item footer">
 		<p class="droits">Tout droits réservés - WADM - 2020</p>
 		<a class="droits" href="https://association-bisounours34.github.io/mentions.html" target="_blank">Mentions Légales</a>	
 	</div>
+	<script type="text/javascript">
+function decode(a) {
+  return a.replace(/[a-zA-Z]/g, function(c){
+    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
+                               ? c : c - 26);
+  })
+}; 
+function openMailer(element) {
+var y = decode("ovfbhabhef.perpur@benatr.se");
+element.setAttribute("href", y);
+element.setAttribute("onclick", "");
+element.firstChild.nodeValue = "Ouvrir programme email";
+};
+</script>
 	<script>
 	var logo = document.querySelector('.logo-sticky')
 	var logoPosition = logo.getBoundingClientRect().top;
