@@ -295,7 +295,7 @@ section{
 
 /*----MOBILE----*/
 
-@media (max-width: 800px){
+@media (max-width: 850px){
 	.logo{width: 80%;}
 	.description{
 		width: 100vw;
