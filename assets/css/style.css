@@ -293,7 +293,9 @@ section{
 	font-family: Roboto, sans-serif;
 }
 
-@media (max-width: 680px){
+/*----MOBILE----*/
+
+@media (max-width: 800px){
 	.logo{width: 80%;}
 	.description{
 		width: 100vw;
