@@ -298,15 +298,15 @@ section{
 @media (max-width: 850px){
 	.logo{width: 80%;}
 	.description{
-		width: 80vw;
+		width: 90vw;
     }
     .pattern{
 		background-image:none;
 	}
 	.structure{
-		margin: 0;
+		margin: auto;
 		flex-direction: column;
-		width: 80%;
+		width: 90%;
 	}
 	.structure img{
 		width: 100%;
@@ -315,15 +315,28 @@ section{
 		transform: initial;
 	}
 	.actualites{
-		width: 80%;
-		margin: 0;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
 	}
 	.tel{font-size: 1.1rem;}
 	.padright{font-weight: initial;}
 	.pattern-mentions{background-image: none;}
-	.mentions{width: 80vw;}
+	.mentions{
+		width: 80vw;
+		margin: auto;
+	}
+	.contact{
+		width: 80vw;
+		margin: auto;
+	}
 }
 
+@media (max-width: 625px){
+	.actualites{
+		font-size: 0.8rem;
+	}
+}
 
 
 
