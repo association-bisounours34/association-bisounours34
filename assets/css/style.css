@@ -240,6 +240,7 @@ section{
 	font-size: 1.1rem;
 	color: #ea4e47;
 }
+.mail:visited{color: #ea4e47;}
 .mail:hover{color: #a4ff94;}
 .tel:link{
 	color: #ea4e47;
