@@ -5,9 +5,7 @@
 	font-family: Roboto, sans-serif;
 }
 body {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
+  width: 100%;
   overflow-x: hidden;
  } 
 
@@ -15,7 +13,6 @@ body {
 	display: flex;
 	justify-content: center;
  	align-items: center;
- 	font-size: 1.5em;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -33,7 +30,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  position: relative;
 }
 
 /*----LOGO----*/
@@ -43,9 +39,8 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-content: flex-end;
-	width: 100vw;
+	width: 100%;
 	margin-top: 20vh;
-	position: relative;
 }
 .logo{
 	border-radius: 400px;
@@ -57,7 +52,6 @@ section{
 	font-family: 'Mali', cursive;
 	letter-spacing: 10px;
 	color: white;
-	font-size: 3rem;
 }
 
 /*----MENU----*/
@@ -68,13 +62,12 @@ section{
 	text-align: center;
 	position: sticky;
 	top: 0;
-	z-index: 500;
+	z-index: 999;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	background-image: linear-gradient(to top, lightgrey 20%, 50%, white 90%);
-	font-size: 1.5rem;
 	text-transform: uppercase;
 }
 .menu img{
@@ -105,7 +98,6 @@ section{
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-    font-size: 1.2rem;
     justify-self: center;
 	color: black;
 	
@@ -114,8 +106,7 @@ section{
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
-    font-size: 1.2rem;
-	width: 50vw;
+	width: 50%;
     justify-self: center;
 	font-family: Roboto, sans-serif;
 	background-color: rgba(255, 180, 125, 0.4);
@@ -138,14 +129,12 @@ section{
 /*----PHOTOS----*/
 
 .structure{
-	margin-left: 25vw;
+	margin-left: 25%;
 	padding-top: 100px;
 	display: flex;
 	flex-direction: row;
-    font-size: 1rem;
     width: 50%;
     justify-content: space-around;
-	color: black;
 }
 .structure img{
 	width: 50%;
@@ -165,17 +154,21 @@ section{
 	width: 100%;
 	margin-top: 100px;
 	padding: 30px;
-	font-size: 1.2rem;
+}
+.capital{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Mali', cursive;
 }
 .actualites{
-	margin-left: 25vw;
+	margin: auto;
 	width: 50%;
 	background-color: rgba(200, 178, 254, 0.4);
 	background-size: cover;
 	border-radius: 50px;
 	padding-bottom: 50px;
 	padding-top: 50px;
-	font-size: 1rem;
 	color: black;
 }
 .actualites tr{
@@ -188,40 +181,25 @@ section{
 .actualites .border{
 	border-bottom: 1px solid black;
 }
-.julie:link{
-	color: #ea4e47;
-	text-decoration: none;
-}
-.julie:visited{
-	color: #ea4e47;
-}
-.julie:hover{
-	color: #a4ff94;
-}
+
 .color{
 	color:darkblue;
 }
-.capital{
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: 'Mali', cursive;
+.taille{
+	font-weight: lighter;
 }
-.taille{font-size: 1.2rem;}
-
 /*----CONTACT----*/
 
 .titre{
 	width: 100%;
 	margin-top: 100px;
 	padding: 30px;
-	font-size: 1.2rem;
 	text-align: center;
 }
 .contact{
 	font-family: 'Mali', cursive;
 	width: 100%;
 	padding-bottom: 100px;
-	font-size: 1rem;
 	text-align: center;
 }
 .padright{
@@ -237,7 +215,6 @@ section{
 }
 .mail:link{
 	font-weight: lighter;
-	font-size: 1.1rem;
 	color: #ea4e47;
 }
 .mail:visited{color: #ea4e47;}
@@ -256,7 +233,7 @@ section{
 	display: block;
 	background-color: black;
 	min-height: 5vh;
-	width: 100vw;
+	width: 100%;
 	padding-bottom: 20px;
 }
 .droits{
@@ -268,7 +245,6 @@ section{
 	padding-top: 20px;
 	color: white;
 	text-align: center;
-	font-size: 1rem;
 	text-decoration: none;
 }
 .pattern-mentions{
@@ -298,7 +274,7 @@ section{
 @media (max-width: 850px){
 	.logo{width: 80%;}
 	.description{
-		width: 90vw;
+		width: 90%;
     }
     .pattern{
 		background-image:none;
@@ -314,31 +290,29 @@ section{
 	.structure img:hover{
 		transform: initial;
 	}
-	.actualites{
-		justify-content: center;
+	.actualites{width: 100%}
+	.contact{
+		flex-direction: column;
+		padding-top: 20px;
 		width: 100%;
 		margin: auto;
 	}
-	.contact{
-		flex-direction: column;
-		width: 80vw;
-		margin: auto;
+
+	.padright{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: initial;
 	}
-	.padright{font-weight: initial;}
 	.pattern-mentions{background-image: none;}
 	.mentions{
-		width: 80vw;
+		width: 80%;
 		margin: auto;
 	}
 }
 
 @media (max-width: 660px){
-	.actualites{
-		font-size: 0.8rem;
-	}
-	.actualites td{
-		padding-left: 5px;
-		padding-right: 5px;
+	.categorie:link{
+		padding: 5px;
 	}
 }
 
