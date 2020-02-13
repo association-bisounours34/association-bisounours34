@@ -293,7 +293,32 @@ section{
 	font-family: Roboto, sans-serif;
 }
 
-
+@media (max-width: 680px){
+	.logo{width: 80%;}
+	.description{
+		width: 100vw;
+    }
+    .pattern{
+		background-image:none;
+	}
+	.structure{
+		margin: 0;
+		flex-direction: column;
+		width: 100%;
+	}
+	.structure img{
+		width: 100%;
+	}
+	.structure img:hover{
+		transform: initial;
+	}
+	.actualites{
+		width: 100%;
+		margin: 0;
+	}
+	.tel{font-size: 1.1rem;}
+	.padright{font-weight: initial;}
+}
 
 
 
