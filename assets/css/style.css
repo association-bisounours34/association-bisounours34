@@ -5,8 +5,7 @@
 	font-family: Roboto, sans-serif;
 }
 body {
-  width: 100%;
-  overflow-x: hidden;
+  width: 100vw;
  } 
 
 .parrallax-item {
@@ -18,7 +17,7 @@ body {
 	background-repeat: no-repeat;
 	z-index: 10;
 }
-
+.size{font-size: -webkit-xxx-large;}
 /*----HEADER----*/
 
 .pimg1 {
@@ -39,13 +38,13 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-content: flex-end;
-	width: 100%;
+	width: 100vw;
 	margin-top: 20vh;
 }
 .logo{
 	border-radius: 400px;
 	background-color: rgba(255, 255, 255, 0.4);
-	width: 30%;
+	width: 30vw;
 	margin-bottom: 20px;
 }
 .assos{
@@ -103,10 +102,11 @@ section{
 	
 }
 .description{
+	font-size: large;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 60vw;
     justify-self: center;
 	font-family: Roboto, sans-serif;
 	background-color: rgba(255, 180, 125, 0.4);
@@ -129,11 +129,11 @@ section{
 /*----PHOTOS----*/
 
 .structure{
-	margin-left: 25%;
+	margin: auto;
 	padding-top: 100px;
 	display: flex;
 	flex-direction: row;
-    width: 50%;
+    width: 50vw;
     justify-content: space-around;
 }
 .structure img{
@@ -143,7 +143,7 @@ section{
 }
 
 .effect:hover{
-	transform: scale(1.5) translate(-10%);
+	transform: scale(1.2);
 	transition: all 0.8s;
 	filter: grayscale(0);
 }
@@ -151,8 +151,8 @@ section{
 /*----ACTUALITES----*/
 
 .agenda{
-	width: 100%;
-	margin-top: 100px;
+	width: 100vw;
+	margin-top: 50px;
 	padding: 30px;
 }
 .capital{
@@ -162,43 +162,38 @@ section{
 	font-family: 'Mali', cursive;
 }
 .actualites{
-	margin: auto;
-	width: 50%;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
 	background-color: rgba(200, 178, 254, 0.4);
 	background-size: cover;
 	border-radius: 50px;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	color: black;
-}
-.actualites tr{
+	width: 60vw;
 	text-align: center;
+	margin: auto;
+	padding-bottom: 30px;
 }
-.actualites td{
-	padding: 10px;	
-	margin-bottom: 20px;
+.actualites h2{padding-top: 20px;}
+hr{
+	width: 100%;
+	margin: 30px;
 }
-.actualites .border{
-	border-bottom: 1px solid black;
+.color{
+	color: #ea4e47;
+	font-weight: bold;
 }
 
-.color{
-	color:darkblue;
-}
-.taille{
-	font-weight: lighter;
-}
 /*----CONTACT----*/
 
 .titre{
-	width: 100%;
-	margin-top: 100px;
+	width: 100vw;
+	margin-top: 50px;
 	padding: 30px;
 	text-align: center;
 }
 .contact{
 	font-family: 'Mali', cursive;
-	width: 100%;
+	width: 100vw;
 	padding-bottom: 100px;
 	text-align: center;
 }
@@ -233,7 +228,7 @@ section{
 	display: block;
 	background-color: black;
 	min-height: 5vh;
-	width: 100%;
+	width: 100vw;
 	padding-bottom: 20px;
 }
 .droits{
@@ -272,17 +267,31 @@ section{
 /*----MOBILE----*/
 
 @media (max-width: 850px){
-	.logo{width: 80%;}
+	body{overflow-x: hidden;}
+	.pimg1{
+		min-height: 30vh;
+		background-attachment: initial;
+	}
+	section{
+		margin: auto;
+		padding-top: 30px;
+	}
+	.logo{width: 30vw;}
+	.menu{
+		font-size: small;
+		margin: auto;
+	}
+	.menu img{width: 50%}
 	.description{
-		width: 90%;
+		width: 90vw;
     }
     .pattern{
 		background-image:none;
 	}
 	.structure{
+		width: 100%;
 		margin: auto;
 		flex-direction: column;
-		width: 90%;
 	}
 	.structure img{
 		width: 100%;
@@ -290,12 +299,17 @@ section{
 	.structure img:hover{
 		transform: initial;
 	}
-	.actualites{width: 100%}
+	.actualites{
+		width: 90vw;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 	.contact{
 		flex-direction: column;
 		padding-top: 20px;
-		width: 100%;
+		width: 100vw;
 		margin: auto;
+		font-size: small;
 	}
 
 	.padright{
@@ -305,7 +319,7 @@ section{
 	}
 	.pattern-mentions{background-image: none;}
 	.mentions{
-		width: 80%;
+		width: 80vw;
 		margin: auto;
 	}
 }
