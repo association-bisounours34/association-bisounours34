@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 	font-family: Roboto, sans-serif;
 }
-body {
-  width: 100vw;
- } 
 
 .parrallax-item {
 	display: flex;
@@ -38,7 +35,6 @@ section{
 	flex-direction: column;
 	justify-content: center;
 	align-content: flex-end;
-	width: 100vw;
 	margin-top: 20vh;
 }
 .logo{
@@ -149,7 +145,6 @@ section{
 /*----ACTUALITES----*/
 
 .agenda{
-	width: 100vw;
 	margin-top: 50px;
 	padding: 30px;
 }
@@ -226,7 +221,6 @@ hr{
 	display: block;
 	background-color: black;
 	min-height: 5vh;
-	width: 100vw;
 	padding-bottom: 20px;
 }
 .droits{
