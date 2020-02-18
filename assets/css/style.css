@@ -296,7 +296,6 @@ hr{
 	.contact{
 		flex-direction: column;
 		padding-top: 20px;
-		width: 100vw;
 		margin: auto;
 		font-size: small;
 	}
