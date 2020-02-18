@@ -178,14 +178,12 @@ hr{
 /*----CONTACT----*/
 
 .titre{
-	width: 100vw;
 	margin-top: 50px;
 	padding: 30px;
 	text-align: center;
 }
 .contact{
 	font-family: 'Mali', cursive;
-	width: 100vw;
 	padding-bottom: 100px;
 	text-align: center;
 }
