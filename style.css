@@ -1,0 +1,381 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+
+.parrallax-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+/*.size{font-size: -webkit-xxx-large;}*/
+/*----HEADER----*/
+
+.pimg1 {
+  background-image: linear-gradient(to right bottom,
+  rgba(249, 248, 119, 0),
+  rgba(0, 144, 255, 0)),
+  url("../img/coin-lecture.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*----LOGO----*/
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: flex-end;
+	margin-top: 20vh;
+}
+.logo{
+	border-radius: 400px;
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 30vw;
+	margin-bottom: 20px;
+}
+.assos{
+	font-family: 'Mali', cursive;
+	letter-spacing: 10px;
+	color: white;
+}
+
+/*----MENU----*/
+p{line-height: 1.5}
+.menu{
+	height: min-content;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-image: linear-gradient(to top, lightgrey 20%, 50%, white 90%);
+	text-transform: uppercase;
+}
+/*.menu img{
+	display: flex;
+	width: 100%;
+}*/
+.small{
+	width: 10vh;
+}
+.menu .logo-sticky{
+	align-items: center;
+	width: 100%;
+}
+.menu .logo-sticky:hover{
+	background-color: #a4ff94;
+	border-radius: 10px;
+}
+
+.categorie:link{
+	align-items: center;
+	font-family: 'Mali', cursive;
+	font-size: 25px;
+	margin: 15px;
+	padding: 15px;
+	text-decoration: none;
+	color: #ea4e47;
+}
+.categorie:visited{color: #ea4e47;}
+.categorie:hover{
+	color: black;
+	background-color: #a4ff94;
+	border-radius: 10px;
+}
+
+/*----A PROPOS----*/
+
+.presentation{
+	font-family: 'Mali', cursive;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+    justify-self: center;
+	color: black;
+}
+.qui{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.description{
+	font-size: large;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+    justify-self: center;
+	font-family: Roboto, sans-serif;
+	background-color: rgba(255, 180, 125, 0.4);
+	border-radius: 50px;
+}
+
+.pattern{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/pattern.jpg");
+	background-attachment: fixed;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+}
+
+/*----PHOTOS----*/
+
+.structure{
+	margin: auto;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: row;
+    width: 50vw;
+    justify-content: space-around;
+}
+.structure img{
+	width: 50%;
+	padding: 20px;
+	filter: grayscale(100%);
+}
+
+.effect:hover{
+	filter: grayscale(0);
+}
+
+/*----ACTUALITES----*/
+
+.agenda{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+.capital{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Mali', cursive;
+}
+.events{
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(200, 178, 254, 0.4);
+	background-size: cover;
+	border-radius: 50px;
+	width: 60vw;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 30px;
+}
+.events h2{padding-top: 20px;}
+hr{
+	width: 100%;
+	margin: 30px;
+}
+.color{
+	color: #ea4e47;
+	font-weight: bold;
+}
+
+/*----CONTACT----*/
+
+.titre{
+	margin-top: 50px;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.contact{
+	font-family: 'Mali', cursive;
+	padding-bottom: 100px;
+	text-align: center;
+}
+.wrap{
+	display: flex;
+	flex-direction: row}
+.padright{
+	padding-right: 4vw;
+	padding-left: 4vw;
+}
+.font{font-family: 'Mali', cursive;}
+.regular{
+	font-weight: lighter;
+}
+.contact h2{
+	line-height: 40px;
+}
+.mail:link{
+	font-weight: lighter;
+	color: #ea4e47;
+}
+.mail:visited{color: #ea4e47;}
+.mail:hover{color: #a4ff94;}
+.tel:link{
+	color: #ea4e47;
+	text-decoration: none;
+}
+.tel:hover{
+	color: #a4ff94;
+}
+/*----FOOTER----*/
+
+.footer{
+	display: block;
+	background-color: black;
+	min-height: 5vh;
+	padding-bottom: 20px;
+}
+.droits{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+.pattern-mentions{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/pattern.jpg");
+	background-attachment: fixed;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+	min-height: 90vh;
+	position: relative;
+}
+.mentions{
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+    font-size: 1.2rem;
+	width: 50vw;
+    justify-self: center;
+	font-family: Roboto, sans-serif;
+}
+
+/*----MOBILE----*/
+
+@media (max-width: 850px){
+	body{overflow-x: hidden;}
+	.pimg1{
+		min-height: 30vh;
+		background-attachment: initial;
+	}
+	section{
+		margin: auto;
+		padding-top: 30px;
+	}
+	.logo{width: 30vw;}
+	.assos{letter-spacing: initial;}
+	.menu{
+		font-size: small;
+		margin: auto;
+	}
+	.logo-sticky{
+		width: 100%;
+	}
+	.description{
+		width: 90vw;
+    }
+    .pattern{
+		background-image:none;
+	}
+	.structure{
+		width: 100%;
+		margin: auto;
+		flex-direction: column;
+	}
+	.structure img{
+		width: 100%;
+	}
+	.structure img:hover{
+		transform: initial;
+	}
+	.actualites{
+		width: 90vw;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.wrap{
+		flex-direction: column;
+		padding-top: 20px;
+		margin: auto;
+		font-size: small;
+	}
+
+	.padright{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: initial;
+	}
+	.pattern-mentions{background-image: none;}
+	.mentions{
+		width: 80vw;
+		margin: auto;
+	}
+}
+
+@media (max-width: 660px){
+	.categorie:link{
+		font-size: 15px;
+		padding: 5px;
+		margin: 5px 10px 5px 5px;
+	}
+	.logo-sticky{
+		width: 10vh;
+		margin: 0;
+		padding:0;
+	}
+	h1{font-size: 1.8em;}
+	p{line-height: 1.5}
+	
+	.presentation{
+		padding-top: 50px;
+	}
+	.description{
+		width: 100%;
+		border-radius: 0;
+		padding: 20px;
+	}
+	.agenda{
+		margin-top: 0;
+	}
+	.contact{
+		margin: 0;
+	}
+	.events{
+		width: 100%;
+		border-radius: 0;
+		padding: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
