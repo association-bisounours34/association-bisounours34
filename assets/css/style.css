@@ -7,6 +7,7 @@
 
 .parrallax-item {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
  	align-items: center;
 	background-attachment: fixed;
@@ -14,7 +15,7 @@
 	background-repeat: no-repeat;
 	z-index: 10;
 }
-.size{font-size: -webkit-xxx-large;}
+/*.size{font-size: -webkit-xxx-large;}*/
 /*----HEADER----*/
 
 .pimg1 {
@@ -50,9 +51,8 @@ section{
 }
 
 /*----MENU----*/
-
+p{line-height: 1.5}
 .menu{
-	margin-bottom: 50px;
 	height: min-content;
 	text-align: center;
 	position: sticky;
@@ -75,7 +75,9 @@ section{
 }
 .categorie:link{
 	font-family: 'Mali', cursive;
-	padding: 20px;
+	font-size: 25px;
+	margin: 15px;
+	padding: 15px;
 	text-decoration: none;
 	color: #ea4e47;
 }
@@ -90,12 +92,15 @@ section{
 
 .presentation{
 	font-family: 'Mali', cursive;
-	padding: 20px;
+	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
     justify-self: center;
 	color: black;
-	
+}
+.qui{
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 .description{
 	font-size: large;
@@ -144,8 +149,11 @@ section{
 /*----ACTUALITES----*/
 
 .agenda{
+	display: flex;
+	flex-direction: column;
 	margin-top: 50px;
-	padding: 30px;
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 .capital{
 	text-transform: uppercase;
@@ -153,7 +161,7 @@ section{
 	text-align: center;
 	font-family: 'Mali', cursive;
 }
-.actualites{
+.events{
 	font-size: 1.2rem;
 	display: flex;
 	flex-direction: column;
@@ -165,7 +173,7 @@ section{
 	margin: auto;
 	padding-bottom: 30px;
 }
-.actualites h2{padding-top: 20px;}
+.events h2{padding-top: 20px;}
 hr{
 	width: 100%;
 	margin: 30px;
@@ -179,7 +187,8 @@ hr{
 
 .titre{
 	margin-top: 50px;
-	padding: 30px;
+	padding-top: 100px;
+	padding-bottom: 40px;
 	text-align: center;
 }
 .contact{
@@ -187,6 +196,9 @@ hr{
 	padding-bottom: 100px;
 	text-align: center;
 }
+.wrap{
+	display: flex;
+	flex-direction: row}
 .padright{
 	padding-right: 4vw;
 	padding-left: 4vw;
@@ -211,7 +223,6 @@ hr{
 .tel:hover{
 	color: #a4ff94;
 }
-
 /*----FOOTER----*/
 
 .footer{
@@ -270,7 +281,9 @@ hr{
 		font-size: small;
 		margin: auto;
 	}
-	.menu img{width: 50%}
+	.logo-sticky{
+		width: 100%;
+	}
 	.description{
 		width: 90vw;
     }
@@ -293,7 +306,7 @@ hr{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	.contact{
+	.wrap{
 		flex-direction: column;
 		padding-top: 20px;
 		margin: auto;
@@ -314,7 +327,36 @@ hr{
 
 @media (max-width: 660px){
 	.categorie:link{
+		font-size: 15px;
 		padding: 5px;
+		margin: 5px 10px 5px 5px;
+	}
+	.logo-sticky{
+		width: 10vh;
+		margin: 0;
+		padding:0;
+	}
+	h1{font-size: 1.8em;}
+	p{line-height: 1.5}
+	
+	.presentation{
+		padding-top: 50px;
+	}
+	.description{
+		width: 100%;
+		border-radius: 0;
+		padding: 20px;
+	}
+	.agenda{
+		margin-top: 0;
+	}
+	.contact{
+		margin: 0;
+	}
+	.events{
+		width: 100%;
+		border-radius: 0;
+		padding: 30px;
 	}
 }
 
