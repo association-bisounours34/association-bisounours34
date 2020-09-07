@@ -65,15 +65,24 @@ p{line-height: 1.5}
 	background-image: linear-gradient(to top, lightgrey 20%, 50%, white 90%);
 	text-transform: uppercase;
 }
-.menu img{
+/*.menu img{
 	display: flex;
 	width: 100%;
+}*/
+.small{
+	width: 10vh;
 }
-.menu img:hover{
+.menu .logo-sticky{
+	align-items: center;
+	width: 100%;
+}
+.menu .logo-sticky:hover{
 	background-color: #a4ff94;
 	border-radius: 10px;
 }
+
 .categorie:link{
+	align-items: center;
 	font-family: 'Mali', cursive;
 	font-size: 25px;
 	margin: 15px;
